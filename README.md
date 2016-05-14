@@ -14,7 +14,7 @@ Here's my development environment:
 >  * Ubuntu 14.04
 >  * nodejs v4.4.3
 >  * npm 2.15.1
->  * various npm packages specified later
+>  * various npm packages specified in package.json
 
 Let's get started!
 
@@ -26,11 +26,11 @@ Create an app folder
 ---------------------
 From a shell prompt (I use bash), create a new folder:
 ~~~bash
-  mkdir hello-webpack-bootstrap-ng
+  mkdir ng2-quickstart
 ~~~
 Then cd into that folder:
 ~~~bash
-  cd hello-webpack-bootstrap-ng
+  cd ng2-quickstart
 ~~~
 Verify npm is properly installed
 --------------------------------
@@ -39,7 +39,7 @@ Verify npm is properly installed
 ~~~
 If npm is installed properly you will see output like this:
 ~~~bash
-  mthomas@ubuntu:~/apps/hello-webpack$ npm -v
+  mthomas@ubuntu:~/apps/ng2-quickstart$ npm -v
   2.15.1
 ~~~
 If you get an error, check the [NPM](https://www.npmjs.com/) documentation and installation guide for help.
@@ -49,7 +49,7 @@ When installing Webpack (or any other npm package), you can install globally or 
 
 Now let's install Webpack in our local project.  Here is the command:
 ~~~bash
-  mthomas@ubuntu:~/apps/hello-webpack$ npm install webpack --save-dev
+  mthomas@ubuntu:~/apps/ng2-quickstart$ npm install webpack --save-dev
 ~~~
 
 When you run this command, you'll see output similar to this:
@@ -74,15 +74,15 @@ webpack@1.13.0 node_modules/webpack
 └── node-libs-browser@0.5.3 (https-browserify@0.0.0, tty-browserify@0.0.0, constants-browserify@0.0.1, path-browserify@0.0.0, os-browserify@0.1.2, string_decoder@0.10.31, process@0.11.2, punycode@1.4.1, querystring-es3@0.2.1, assert@1.3.0, timers-browserify@1.4.2, domain-browser@1.1.7, events@1.1.0, vm-browserify@0.0.4, util@0.10.3, stream-browserify@1.0.0, console-browserify@1.1.0, http-browserify@1.7.0, readable-stream@1.1.14, url@0.10.3, buffer@3.6.0, browserify-zlib@0.1.4, crypto-browserify@3.2.8)
 ~~~
 _For now, we can safely ignore the warning at the top about the fsevents dependency._  The installation succeded and installed Webpack plus numerous core dependencies.
-Install css-loader and style-loader npm packages
+Install dependencies.  Our app dependencies are specified in package.json.
 ------------------------------------------------
 In order to get our basic app working properly, we will need a couple of _loader_ packages.   Let's install them now:
 ~~~bash
-  mthomas@ubuntu:~/apps/hello-webpack$ npm install css-loader --save-dev
+  mthomas@ubuntu:~/apps/ng2-quickstart$ npm install
 ~~~
 The output will look like this:
 ~~~bash
-mthomas@ubuntu:~/apps/hello-webpack$ npm install css-loader --save-dev
+mthomas@ubuntu:~/apps/ng2-quickstart$ npm install
 css-loader@0.23.1 node_modules/css-loader
 ├── postcss-modules-extract-imports@1.0.0
 ├── object-assign@4.0.1
