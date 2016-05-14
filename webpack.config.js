@@ -14,6 +14,7 @@ module.exports = {
     'font-awesome-loader',
     'bootstrap-loader/extractStyles',
     'tether',
+    './app/styles/app.css',
     './app/app.component.js',
     './app/main',
   ],
