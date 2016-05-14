@@ -47,9 +47,13 @@ Install Webpack and App Dependencies
 ---------------
 When installing Webpack (or any other npm package), you can install globally or locally.  Installing npm packages locally means that packages are installed only in the current project folder, hello-webpack in this case, and are not intended for other apps.  **__I recommend installing npm packages locally as it gives you the freedom to use different versions of packages in different projects.__**
 
-Now let's install Webpack in our local project.  Here is the command:
+Now let's install Webpack and all the app dependencies.  The app dependencies are specified in package.json.  Here is the command:
 ~~~bash
-  mthomas@ubuntu:~/apps/ng2-quickstart$ npm install webpack --save-dev
+npm i
+~~~
+or
+~~~bash
+npm install
 ~~~
 
 When you run this command, you'll see output similar to this:
