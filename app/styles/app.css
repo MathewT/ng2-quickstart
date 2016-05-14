@@ -2,6 +2,7 @@
 $icons-color: adjust-hue($brand-success, -20deg);
 
 #app {
+
   display: block;
   position: relative;
   width: 100%;
@@ -21,6 +22,14 @@ $icons-color: adjust-hue($brand-success, -20deg);
     }
   }
 
+}
+
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
 }
 
 
